@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-/* set simulation with FlagsAttribute */
+/* set (bit-fields) simulation with FlagsAttribute */
 namespace Lessons
 {
     public partial class MainForm : Form
