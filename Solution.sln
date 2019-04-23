@@ -13,115 +13,115 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Classes", "03 Classes", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Advanced", "04 Advanced", "{A732F2E2-60AD-4BF7-AE78-6428EF4CF6C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-00 First App 1", "00-00\00-00 First App 1.csproj", "{554A9C46-0665-49D8-97F7-86DB11BE6EB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-00 First App 1", "00-00 First App 1\00-00 First App 1.csproj", "{554A9C46-0665-49D8-97F7-86DB11BE6EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-01 First App 2", "00-01\00-01 First App 2.csproj", "{FCD6D18A-060E-4687-8CE2-638515C128FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-01 First App 2", "00-01 First App 2\00-01 First App 2.csproj", "{FCD6D18A-060E-4687-8CE2-638515C128FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-02 First App 3", "00-02\00-02 First App 3.csproj", "{42324F2C-10DC-4A82-A475-F2654FB075F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-02 First App 3", "00-02 First App 3\00-02 First App 3.csproj", "{42324F2C-10DC-4A82-A475-F2654FB075F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-00 Value And Reference Types", "01-00\01-00 Value And Reference Types.csproj", "{FDCB8AC1-B1DC-4BCA-885E-DEA5BF04A3FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-00 Value And Reference Types", "01-00 Value And Reference Types\01-00 Value And Reference Types.csproj", "{FDCB8AC1-B1DC-4BCA-885E-DEA5BF04A3FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01 Variables And Constants", "01-01\01-01 Variables And Constants.csproj", "{28E2A666-BFCC-4282-87D7-42459073297B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01 Variables And Constants", "01-01 Variables And Constants\01-01 Variables And Constants.csproj", "{28E2A666-BFCC-4282-87D7-42459073297B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02 Literal Values", "01-02\01-02 Literal Values.csproj", "{2C1637C2-013F-4AF3-892F-58D29F9383AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02 Literal Values", "01-02 Literal Values\01-02 Literal Values.csproj", "{2C1637C2-013F-4AF3-892F-58D29F9383AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03 Boolean Operators", "01-03\01-03 Boolean Operators.csproj", "{22B5570A-6CD0-43F9-AD5C-F3E2D2906981}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03 Boolean Operators", "01-03 Boolean Operators\01-03 Boolean Operators.csproj", "{22B5570A-6CD0-43F9-AD5C-F3E2D2906981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-04 If Else Statements", "01-04\01-04 If Else Statements.csproj", "{3848F3FF-783F-4969-8AD3-0B99C2710B92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-04 If Else Statements", "01-04 If Else Statements\01-04 If Else Statements.csproj", "{3848F3FF-783F-4969-8AD3-0B99C2710B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-05 Switch", "01-05\01-05 Switch.csproj", "{C303B44D-B6D9-45B4-A6D6-210FBCF786E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-05 Switch", "01-05 Switch\01-05 Switch.csproj", "{C303B44D-B6D9-45B4-A6D6-210FBCF786E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-06 Loops", "01-06\01-06 Loops.csproj", "{71F75154-2295-4832-8B1B-8CDAC62D1B6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-06 Loops", "01-06 Loops\01-06 Loops.csproj", "{71F75154-2295-4832-8B1B-8CDAC62D1B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-07 Implicitly Typed Local Variables", "01-07\01-07 Implicitly Typed Local Variables.csproj", "{B38A6FD0-1328-41BD-B91B-F2EF9C6B1DE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-07 Implicitly Typed Local Variables", "01-07 Implicitly Typed Local Variables\01-07 Implicitly Typed Local Variables.csproj", "{B38A6FD0-1328-41BD-B91B-F2EF9C6B1DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-08 Nullable Types", "01-08\01-08 Nullable Types.csproj", "{0043A574-8DFB-4269-A31B-8D4CB152A5BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-08 Nullable Types", "01-08 Nullable Types\01-08 Nullable Types.csproj", "{0043A574-8DFB-4269-A31B-8D4CB152A5BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-09 Boxing Casting is as", "01-09\01-09 Boxing Casting is as.csproj", "{81738416-8B48-492D-9F0A-A1DA41AEFC33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-09 Boxing Casting is as", "01-09 Boxing Casting is as\01-09 Boxing Casting is as.csproj", "{81738416-8B48-492D-9F0A-A1DA41AEFC33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-10 Comments", "01-10\01-10 Comments.csproj", "{FBF6FB7C-289F-4311-B207-D13817BD1BAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-10 Comments", "01-10 Comments\01-10 Comments.csproj", "{FBF6FB7C-289F-4311-B207-D13817BD1BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-11 Exceptions", "01-11\01-11 Exceptions.csproj", "{8581A949-0D44-4FBD-A58D-2179A73F8757}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-11 Exceptions", "01-11 Exceptions\01-11 Exceptions.csproj", "{8581A949-0D44-4FBD-A58D-2179A73F8757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-12 Exceptions 2", "01-12\01-12 Exceptions 2.csproj", "{CAA8B457-99B9-428A-890E-E80BF459CD3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-12 Exceptions 2", "01-12 Exceptions 2\01-12 Exceptions 2.csproj", "{CAA8B457-99B9-428A-890E-E80BF459CD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-00 Enum types", "02-00\02-00 Enum types.csproj", "{A986CD10-FCB5-4780-885B-079C0D0F831A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-00 Enum types", "02-00 Enum types\02-00 Enum types.csproj", "{A986CD10-FCB5-4780-885B-079C0D0F831A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01 Bitfields and FlagsAttribute", "02-01\02-01 Bitfields and FlagsAttribute.csproj", "{BD5B899F-FA34-4072-98C1-5CFF6B49DA1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01 Bitfields and FlagsAttribute", "02-01 Bitfields and FlagsAttribute\02-01 Bitfields and FlagsAttribute.csproj", "{BD5B899F-FA34-4072-98C1-5CFF6B49DA1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02 Arrays", "02-02\02-02 Arrays.csproj", "{EE4D687C-F53D-45C5-9CC2-7279BAD86EE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-02 Arrays", "02-02 Arrays\02-02 Arrays.csproj", "{EE4D687C-F53D-45C5-9CC2-7279BAD86EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03 Strings", "02-03\02-03 Strings.csproj", "{DEA80D2A-D605-4EF7-9625-8B358B11D06D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-03 Strings", "02-03 Strings\02-03 Strings.csproj", "{DEA80D2A-D605-4EF7-9625-8B358B11D06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04 String Methods", "02-04\02-04 String Methods.csproj", "{4EEEE3CB-B30B-4F71-AB8B-9D4AAAF2F509}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-04 String Methods", "02-04 String Methods\02-04 String Methods.csproj", "{4EEEE3CB-B30B-4F71-AB8B-9D4AAAF2F509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05 Verbatim Strings - StringBuilder", "02-05\02-05 Verbatim Strings - StringBuilder.csproj", "{82DF7F08-205C-451E-B176-CF0EF9C24DE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-05 Verbatim Strings - StringBuilder", "02-05 Verbatim Strings - StringBuilder\02-05 Verbatim Strings - StringBuilder.csproj", "{82DF7F08-205C-451E-B176-CF0EF9C24DE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-06 DateTime", "02-06\02-06 DateTime.csproj", "{2F7DFFF7-F49C-4AF8-B4AD-074B7A461D79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-06 DateTime", "02-06 DateTime\02-06 DateTime.csproj", "{2F7DFFF7-F49C-4AF8-B4AD-074B7A461D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-00 Namespaces", "03-00\03-00 Namespaces.csproj", "{3FBAAEBC-897E-4B67-B528-31D1F646A315}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-07 Lists and Collections", "02-07 Lists and Collections\02-07 Lists and Collections.csproj", "{3574B71F-E2CB-4C3F-9DD7-3AA326567D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01 Delegates", "03-01\03-01 Delegates.csproj", "{39B95CB4-6BE2-4634-A698-D97B2A8FD7B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-00 Namespaces", "03-00 Namespaces\03-00 Namespaces.csproj", "{3FBAAEBC-897E-4B67-B528-31D1F646A315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02 Multicast Delegates", "03-02\03-02 Multicast Delegates.csproj", "{4477E8D3-60A1-468B-8207-DB36A546BEA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01 Delegates", "03-01 Delegates\03-01 Delegates.csproj", "{39B95CB4-6BE2-4634-A698-D97B2A8FD7B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03 Named and Anonymous Methods", "03-03\03-03 Named and Anonymous Methods.csproj", "{5FBB454E-017C-4F28-946D-709361CFF7B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02 Multicast Delegates", "03-02 Multicast Delegates\03-02 Multicast Delegates.csproj", "{4477E8D3-60A1-468B-8207-DB36A546BEA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04 Classes and Objects - Inheritance", "03-04\03-04 Classes and Objects - Inheritance.csproj", "{5332C6EA-2AA8-48AD-9725-71B2FA3A4AEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-03 Named and Anonymous Methods", "03-03 Named and Anonymous Methods\03-03 Named and Anonymous Methods.csproj", "{5FBB454E-017C-4F28-946D-709361CFF7B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05 Constructors", "03-05\03-05 Constructors.csproj", "{042F56D4-8F12-49C8-951E-08B5F4594848}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-04 Classes and Objects - Inheritance", "03-04 Classes and Objects - Inheritance\03-04 Classes and Objects - Inheritance.csproj", "{5332C6EA-2AA8-48AD-9725-71B2FA3A4AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-06 Methods", "03-06\03-06 Methods.csproj", "{11425BAE-19BE-4557-A03D-8E58FE2EA3C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-05 Constructors", "03-05 Constructors\03-05 Constructors.csproj", "{042F56D4-8F12-49C8-951E-08B5F4594848}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-07 Overloaded Methods", "03-07\03-07 Overloaded Methods.csproj", "{07991A65-DF45-4F83-BE27-180FC840D743}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-06 Methods", "03-06 Methods\03-06 Methods.csproj", "{11425BAE-19BE-4557-A03D-8E58FE2EA3C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-08 Properties and Indexers", "03-08\03-08 Properties and Indexers.csproj", "{496DCFC0-5731-4AA1-B419-B260BACD44DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-07 Overloaded Methods", "03-07 Overloaded Methods\03-07 Overloaded Methods.csproj", "{07991A65-DF45-4F83-BE27-180FC840D743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-09 Events", "03-09\03-09 Events.csproj", "{B50C33A1-6C3C-4089-91C8-8C1A506E43A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-08 Properties and Indexers", "03-08 Properties and Indexers\03-08 Properties and Indexers.csproj", "{496DCFC0-5731-4AA1-B419-B260BACD44DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-10 Static and Sealed Classes", "03-10\03-10 Static and Sealed Classes.csproj", "{B2A8CE3A-9867-4246-BEFD-8B8597F019BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-09 Events", "03-09 Events\03-09 Events.csproj", "{B50C33A1-6C3C-4089-91C8-8C1A506E43A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-11 Hiding Members in Derived Classes", "03-11\03-11 Hiding Members in Derived Classes.csproj", "{BC08B221-ECF2-4FBC-9591-6CFF83B6B512}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-10 Static and Sealed Classes", "03-10 Static and Sealed Classes\03-10 Static and Sealed Classes.csproj", "{B2A8CE3A-9867-4246-BEFD-8B8597F019BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-12 Polymorphism", "03-12\03-12 Polymorphism.csproj", "{C9C5A5CA-0484-4030-8A92-E46BA08EBB1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-11 Hiding Members in Derived Classes", "03-11 Hiding Members in Derived Classes\03-11 Hiding Members in Derived Classes.csproj", "{BC08B221-ECF2-4FBC-9591-6CFF83B6B512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-13 Abstract Classes and Methods", "03-13\03-13 Abstract Classes and Methods.csproj", "{0CA5E3F0-58ED-4272-8A82-F2BBC7E697EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-12 Polymorphism", "03-12 Polymorphism\03-12 Polymorphism.csproj", "{C9C5A5CA-0484-4030-8A92-E46BA08EBB1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-14 Interfaces", "03-14\03-14 Interfaces.csproj", "{09E05EB4-47DC-4F8D-A39B-E7D2DA2F1F60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-13 Abstract Classes and Methods", "03-13 Abstract Classes and Methods\03-13 Abstract Classes and Methods.csproj", "{0CA5E3F0-58ED-4272-8A82-F2BBC7E697EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-15 Structs", "03-15\03-15 Structs.csproj", "{045A85D9-6720-468B-A824-BCF145DAA5A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-14 Interfaces", "03-14 Interfaces\03-14 Interfaces.csproj", "{09E05EB4-47DC-4F8D-A39B-E7D2DA2F1F60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-16 Object Comparison", "03-16\03-16 Object Comparison.csproj", "{51699480-5763-46F4-93B7-C749C9A45FE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-15 Structs", "03-15 Structs\03-15 Structs.csproj", "{045A85D9-6720-468B-A824-BCF145DAA5A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-17 Nested Types", "03-17\03-17 Nested Types.csproj", "{52F058F6-B402-46AB-96EA-10A48333C83E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-16 Object Comparison", "03-16 Object Comparison\03-16 Object Comparison.csproj", "{51699480-5763-46F4-93B7-C749C9A45FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-18 Partial Classes and Methods", "03-18\03-18 Partial Classes and Methods.csproj", "{1FF12EE9-AC7A-48FB-AF30-DD7BC3A7030B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-17 Nested Types", "03-17 Nested Types\03-17 Nested Types.csproj", "{52F058F6-B402-46AB-96EA-10A48333C83E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-19 Anonymous Types - Initializers", "03-19\03-19 Anonymous Types - Initializers.csproj", "{2530AF36-C465-42C7-8822-AE31785A6C5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-18 Partial Classes and Methods", "03-18 Partial Classes and Methods\03-18 Partial Classes and Methods.csproj", "{1FF12EE9-AC7A-48FB-AF30-DD7BC3A7030B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-20 Extension Methods", "03-20\03-20 Extension Methods.csproj", "{1989705C-2D3D-44C7-8375-E909387642DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-19 Anonymous Types - Initializers", "03-19 Anonymous Types - Initializers\03-19 Anonymous Types - Initializers.csproj", "{2530AF36-C465-42C7-8822-AE31785A6C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-21 Operator Overloading", "03-21\03-21 Operator Overloading.csproj", "{AA91EB1E-99EB-47B6-8AA4-662FB527A08B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-20 Extension Methods", "03-20 Extension Methods\03-20 Extension Methods.csproj", "{1989705C-2D3D-44C7-8375-E909387642DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-22 Destructors - GC - IDisposable", "03-22\03-22 Destructors - GC - IDisposable.csproj", "{405FFB70-098A-4EF6-BFD7-F8CFB2F9B753}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-21 Operator Overloading", "03-21 Operator Overloading\03-21 Operator Overloading.csproj", "{AA91EB1E-99EB-47B6-8AA4-662FB527A08B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-23 Pointers", "03-23\03-23 Pointers.csproj", "{0B6FF4CE-23B2-4A76-B6FC-B4AF34D79024}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-22 Destructors - GC - IDisposable", "03-22 Destructors - GC - IDisposable\03-22 Destructors - GC - IDisposable.csproj", "{405FFB70-098A-4EF6-BFD7-F8CFB2F9B753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-24 Heap Stack and Recursion", "03-24\03-24 Heap Stack and Recursion.csproj", "{E3F0BBF9-05EE-4DEB-96AE-7AAA5B0360B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-23 Pointers", "03-23 Pointers\03-23 Pointers.csproj", "{0B6FF4CE-23B2-4A76-B6FC-B4AF34D79024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-07 Lists and Collections", "02-07\02-07 Lists and Collections.csproj", "{3574B71F-E2CB-4C3F-9DD7-3AA326567D4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-24 Heap Stack and Recursion", "03-24 Heap Stack and Recursion\03-24 Heap Stack and Recursion.csproj", "{E3F0BBF9-05EE-4DEB-96AE-7AAA5B0360B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-00 Attributes", "04-00\04-00 Attributes.csproj", "{A322A90F-115A-4F21-94F7-A9E902C9AE33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-00 Attributes", "04-00 Attributes\04-00 Attributes.csproj", "{A322A90F-115A-4F21-94F7-A9E902C9AE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-01 Application Domains - Assemblies - Reflection", "04-01 Application Domains - Assemblies - Reflection\04-01 Application Domains - Assemblies - Reflection.csproj", "{2E8267B0-B4F0-40BB-A296-9AFF9664435D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02 Lambda Expressions", "04-02 Lambda Expressions\04-02 Lambda Expressions.csproj", "{8821D761-4CA8-40FB-A54D-917A4761D178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03 Generics", "04-03 Generics\04-03 Generics.csproj", "{D03D7298-57CD-4ADE-A3CA-60AAC19EE02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04 Iterators", "04-04 Iterators\04-04 Iterators.csproj", "{A3B685AC-4C49-403B-BC98-14B350B2A2A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lessons", "Lessons\Lessons.csproj", "{919A74EE-6EF7-436C-8823-5CC0F08CAE46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-01 Application Domains - Assemblies - Reflection", "04-01\04-01 Application Domains - Assemblies - Reflection.csproj", "{2E8267B0-B4F0-40BB-A296-9AFF9664435D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02 Lambda Expressions", "04-02\04-02 Lambda Expressions.csproj", "{8821D761-4CA8-40FB-A54D-917A4761D178}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03 Generics", "04-03\04-03 Generics.csproj", "{D03D7298-57CD-4ADE-A3CA-60AAC19EE02C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04 Iterators", "04-04\04-04 Iterators.csproj", "{A3B685AC-4C49-403B-BC98-14B350B2A2A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02690C0D-0C0F-4312-A70E-3479107C5DC5}"
 	ProjectSection(SolutionItems) = preProject
