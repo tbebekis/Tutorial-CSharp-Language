@@ -259,7 +259,7 @@ TODO
     {
         static class Program
         {
-            static void Main(string\[\] args)
+            static void Main(string[] args)
             {
                 MessageBox.Show("Hi there!");
             }
@@ -459,16 +459,16 @@ Suffixes are used to clarify the type of a literal. Otherwise the compiler uses 
     hexadecimal integer         0x hex-digits, e.g. 0x00FF             
     float			float type suffixes
                                      F f D d M m
-                                Scientific notation (E, e) e.g.  -2.5e-3   /\* = -0.0025 \*/
+                                Scientific notation (E, e) e.g.  -2.5e-3   /* = -0.0025 */
 
 #### Character literals
 
 A character literal represents a single character, and usually consists of a character in quotes, as in `'a'`. It can also have any of the following sequence forms
 
     simple-escape-sequence, one of
-       \\' \\" \\\\ \\0 \\a \\b \\f \\n \\r \\t \\v
+       \' \" \\ \0 \a \b \f \n \r \t \v
     hexadecimal-escape-sequence 
-       \\x0000
+       \x0000
     unicode-escape-sequence
         U+0032                                  
 
@@ -476,17 +476,17 @@ A character literal represents a single character, and usually consists of a cha
 
     Escape sequence            Character name        Unicode code point
     --------------------------------------------------------------------- 
-    \\'                         Single quote          0x0027
-    \\"                         Double quote          0x0022
-    \\\\                         Backslash             0x005C
-    \\0                         Null                  0x0000
-    \\a                         Alert                 0x0007
-    \\b                         Backspace             0x0008
-    \\f                         Form feed             0x000C
-    \\n                         New line              0x000A
-    \\r                         Carriage return       0x000D
-    \\t                         Horizontal tab        0x0009
-    \\v                         Vertical tab          0x000B                            
+    \'                         Single quote          0x0027
+    \"                         Double quote          0x0022
+    \\                         Backslash             0x005C
+    \0                         Null                  0x0000
+    \a                         Alert                 0x0007
+    \b                         Backspace             0x0008
+    \f                         Form feed             0x000C
+    \n                         New line              0x000A
+    \r                         Carriage return       0x000D
+    \t                         Horizontal tab        0x0009
+    \v                         Vertical tab          0x000B                            
 
 #### String literals
 
@@ -519,12 +519,14 @@ Value type variables may initialized by either
 
 Calling the default constructor of a Value type, returns a so called default value.
 
+```
   // Value type initialization
   int x;                  // no initialization 
   x = 1;                  // now it's initialized
   int y = 5;              // explicit initialization by using a literal value
   int z = y;              // initialization by using another variable  
-  int i = new int();      // default initialization of a Value type by using the default constructor    
+  int i = new int();      // default initialization of a Value type by using the default constructor   
+``` 
 
 Regarding Reference types a constructor call creates a new instance of the class, called **object**.
 
@@ -533,15 +535,17 @@ A Reference type variable is initialized by either
 *   a call to a constructor
 *   or assigning an already initialized variable.
 
+```
     // Reference type initialization
     Test T = new Test();    // in creating an object, a constructor call is always required
     Test T2 = T;            // T2 now points to the same object as T
-    int\[\] a = new int\[3\];   // arrays are Reference types, this creates an array object with all of its elements having a default initialization    
+    int[] a = new int[3];   // arrays are Reference types, this creates an array object with all of its elements having a default initialization    
+```    
 
 Strings and Arrays are Reference types but can be initialized by using a syntax very closed to the one used with Value types.
 
     string S = "C sharp";
-    int\[\] a = {1, 2 }; 
+    int[] a = {1, 2}; 
 
 Besides that the string type (`System.String` class) provides many parameterized constructors.
 
@@ -602,7 +606,7 @@ Expession is a fragment of code that **evaluates and returns a value**. That val
     int x = 5;
     int y = 8;
     
-    i = x \* y / 2;
+    i = x * y / 2;
 
 #### Statements
 
@@ -736,7 +740,7 @@ The format definition of the `foreach` statement is
 
 Here is an example
 
-    int\[\] numbers = int\[\] {1, 2, 3, 4, 5};
+    int[] numbers = int[] {1, 2, 3, 4, 5};
     
     foreach (int n in numbers)
     {
@@ -796,8 +800,8 @@ Using the keyword `var` makes it possible to declare a local variable without sp
     var s = "C sharp";
     var b = false;
     var d = 1.2;
-    var a = new\[\] { 1, 2, 3 };
-    var a2 = new\[\] { "Hi", "there" }; 
+    var a = new [] { 1, 2, 3 };
+    var a2 = new [] { "Hi", "there" }; 
 
 It is not legal to declare an impliticly typed local variable without initialization.
 
@@ -888,8 +892,8 @@ Operators that are considered legal for the underlying type, can be used with th
     // any valid operator may be used
     x++;
     x += 1;
-    x /= 2;
-    x = x \* 2;            
+    x = 2;
+    x = x * 2;            
 
 As a general rule, if a single operand is `null` the whole expression returns `null.`
 
@@ -1006,7 +1010,7 @@ The conditional operator `?:` returns one of two values depending on the value o
 
 The conditional operator is of the form
 
-    condition ? first\_expression : second\_expression;    
+    condition ? first_expression : second_expression;    
 
 Here is an example.
 
@@ -1042,9 +1046,9 @@ C# supports single and multi-line comments.
 
     // single line comment
 
-    /\*
+    /*
       multi-line comment
-    \*/    
+    */    
 
 A single-line comment can be placed either in a line alone or after a line of code.
 
@@ -1057,16 +1061,16 @@ A single-line comment can be placed either in a line alone or after a line of co
 
 A multi-line comment can be placed anyhwere, even in the middle of a code line.
 
-    /\* increment the i \*/
+    /* increment the i */
     i++;
     
     ...    
     
-    i++;  /\* increment the i \*/
+    i++;  /* increment the i */
     
     ...
     
-    if (1 > 2 /\* is this possible?\*/ )
+    if (1 > 2 /* is this possible? */ )
     {
     }
 
@@ -1132,7 +1136,7 @@ Although C# compiler does not have a separate preprocessor the directives are pr
 
 To define a user defined directive
 
-    #define NET\_CF                 
+    #define NET_CF                 
 
 The `#define` directive defines a symbol, in the above case `NET_CF`.
 
@@ -1140,13 +1144,13 @@ Directives defined by `#define` should be at the top of the source document. You
 
 To undefine the same symbol
 
-    #undef NET\_CF        
+    #undef NET_CF        
 
 Defined symbols are used in conditional compilation.
 
 The directives `#if`, `#elif`, `#else` and `#endif` are used to check if a symbol is defined
 
-    #if NET\_CF
+    #if NET_CF
        // Compact Framework specific code  
     #else
        // normal .Net code here
@@ -1259,11 +1263,11 @@ The best place to place a generic exception handler is the `Main()` method in th
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false); 
 
-        /\* adding a main exception handler method which is going to handle any unhandled exception
-           thrown from inside any of the UI threads, NOT any other thread \*/
+        /* adding a main exception handler method which is going to handle any unhandled exception
+           thrown from inside any of the UI threads, NOT any other thread */
         Application.ThreadException += new ThreadExceptionEventHandler(MainExceptionHandler);
 
-        /\* forcing all UI exceptions go throur the newly installed main exception handler \*/
+        /* forcing all UI exceptions go throur the newly installed main exception handler */
         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 
         Application.Run(new MainForm());
@@ -1323,7 +1327,7 @@ C# does not provide a set type but we can simulate set variables.
 
 By applying the `FlagsAttribute` attribute to an `enum` type and by assigning values of powers of two (0, 1, 2, 4, 8 and so on) to its constants we convert the `enum` type into a **bit-field**, that is a set of flags.
 
-    \[Flags\]
+    [Flags]
     enum Day {Sun = 0, Mon = 1, Tue = 2, Wed = 4, Thu = 8, Fri = 16, Sat = 32 };
     
     Day WeekEnd = Day.Sat | Day.Sun; // a "set"
@@ -1358,48 +1362,48 @@ An array may have more than one dimension (rank).
 
 To declare an array variable
 
-    DataType\[\] VariableName;
+    DataType[] VariableName;
 
 An example for an `int` array variable
 
-    int\[\] numbers;
+    int[] numbers;
 
 To declare an `int` array with 2 dimensions (rank 2)
 
-    int\[,\] numbers;
+    int[,] numbers;
 
 To declare a single-dimensional array with 5 elements
 
-    int\[\] numbers = new int\[5\];
+    int[] numbers = new int[5];
 
 To declare the same array and set its element values using an initializer
 
-    int\[\] numbers = new int\[\] { 1, 2, 3, 4, 5 };   
+    int[] numbers = new int[] { 1, 2, 3, 4, 5 };   
 
 Alternatively, you may omit the new operator and the array size definition when initializing element values
 
-    int\[\] numbers = { 1, 2, 3, 4, 5 };  
+    int[] numbers = { 1, 2, 3, 4, 5 };  
 
 To declare a 2-dimensional int array with 2 Rows and 3 Columns
 
-    int\[,\] twoDimNumbers = new int \[2, 3\];    
+    int[,] twoDimNumbers = new int [2, 3];    
 
 To initialize elements of a 2-dimensional array
 
-    int\[,\] twoDimNumbers = {   { 1, 2, 3 }, 
+    int[,] twoDimNumbers = {   { 1, 2, 3 }, 
                                { 4, 5, 6 } 
                              };                                  
 
 #### Accessing array elements
 
-    int x = numbers\[0\];         // x = 1 
-    x = twoDimNumbers\[0, 0\]     // x = 1
+    int x = numbers[0];         // x = 1 
+    x = twoDimNumbers[0, 0]     // x = 1
           
-    int x = numbers\[3\];         // x = 4 
-    x = twoDimNumbers\[0, 2\];    // x = 3    
+    int x = numbers[3];         // x = 4 
+    x = twoDimNumbers[0, 2];    // x = 3    
 
-    numbers\[1\] = 123;
-    twoDimNumbers\[0, 1\] = 456;
+    numbers[1] = 123;
+    twoDimNumbers[0, 1] = 456;
 
 #### Arrays are Reference types.
 
@@ -1422,12 +1426,12 @@ of the `Array` class returns the length of an array dimension.
 
 To get the length of single-dimensional array, use
 
-    int\[\] numbers = { 1, 2, 3, 4, 5 };
+    int[] numbers = { 1, 2, 3, 4, 5 };
     int i = numbers.GetLength(0); 
 
 To get the length of the two dimensions of two-dimensional array
 
-    int\[,\] twoDimNumbers = {   { 1, 2, 3 }, 
+    int[,] twoDimNumbers = {   { 1, 2, 3 }, 
                                { 4, 5, 6 } 
                             };
                             
@@ -1451,24 +1455,24 @@ The property `Length` of the `Array` class returns the total number of elements 
 
 A method can return an array
 
-    public int\[\] GetArray()
+    public int[] GetArray()
     {
         return new int {5, 6, 7};
     }
 
 
-    int\[\] x = GetArray();
+    int[] x = GetArray();
 
 An array argument passed to a method is a reference to an array instance, **not** a copy of the array.
 
-    int\[\] numbers = new int\[\] { 1, 2, 3, 4, 5 };   
+    int[] numbers = new int[] { 1, 2, 3, 4, 5 };   
 
-    public void HandleArray(int\[\] A)
+    public void HandleArray(int[] A)
     {
-       A\[0\] = 9;
+       A[0] = 9;
     }
 
-    // numbers\[0\] = 9 now
+    // numbers[0] = 9 now
 
 #### Jagged Arrays
 
@@ -1476,23 +1480,23 @@ A jagged array is an array of arrays, that is the elements of a jagged array ar
 
 Declaring a jagged array
 
-    int\[\]\[\] jagged = new int\[3\]\[\];
+    int[][] jagged = new int[3][];
 
 Declaring the elements of a jagged array
 
-    jagged\[0\] = new int\[4\];
-    jagged\[1\] = new int\[3\];
-    jagged\[2\] = new int\[5\];
+    jagged[0] = new int[4];
+    jagged[1] = new int[3];
+    jagged[2] = new int[5];
 
 Declaring and initializing a jagged array
 
-    jagged\[0\] = new int\[\] { 1, 2, 3, 4 };
-    jagged\[1\] = new int\[\] { 5, 6, 7 };
-    jagged\[2\] = new int\[\] { 8, 9, 10, 11, 12 };
+    jagged[0] = new int[] { 1, 2, 3, 4 };
+    jagged[1] = new int[] { 5, 6, 7 };
+    jagged[2] = new int[] { 8, 9, 10, 11, 12 };
 
 Accessing jagged array elements
 
-    int x = jagged\[1\]\[2\];  // x = 7
+    int x = jagged[1][2];  // x = 7
 
 See documentation for more information on creating, initializing and using jagged arrays.
 
@@ -1519,7 +1523,7 @@ The equality operators `==` and `!=` also work on strings.
 Accessing a string as an array of characters
 
     for (int i = 0; i < S.Length; i++)
-        S2 += S\[i\].ToString() + Environment.NewLine;
+        S2 += S[i].ToString() + Environment.NewLine;
 
 #### The empty string
 
@@ -1578,12 +1582,12 @@ The `StringBuilder` class represents a mutable string.
         public int Length { get; set; }
         public int MaxCapacity { get; }
 
-        public char this\[int index\] { get; set; }
+        public char this[int index] { get; set; }
 
         public StringBuilder Append(bool value);
         public StringBuilder Append(byte value);
         public StringBuilder Append(char value);
-        public StringBuilder Append(char\[\] value);
+        public StringBuilder Append(char[] value);
         public StringBuilder Append(decimal value);
         public StringBuilder Append(double value);
         public StringBuilder Append(float value);
@@ -1597,22 +1601,22 @@ The `StringBuilder` class represents a mutable string.
         public StringBuilder Append(ulong value);
         public StringBuilder Append(ushort value);
         public StringBuilder Append(char value, int repeatCount);
-        public StringBuilder Append(char\[\] value, int startIndex, int charCount);
+        public StringBuilder Append(char[] value, int startIndex, int charCount);
         public StringBuilder Append(string value, int startIndex, int count);
         public StringBuilder AppendFormat(string format, object arg0);
-        public StringBuilder AppendFormat(string format, params object\[\] args);
-        public StringBuilder AppendFormat(IFormatProvider provider, string format, params object\[\] args);
+        public StringBuilder AppendFormat(string format, params object[] args);
+        public StringBuilder AppendFormat(IFormatProvider provider, string format, params object[] args);
         public StringBuilder AppendFormat(string format, object arg0, object arg1);
         public StringBuilder AppendFormat(string format, object arg0, object arg1, object arg2);
         public StringBuilder AppendLine();
         public StringBuilder AppendLine(string value);
-        public void CopyTo(int sourceIndex, char\[\] destination, int destinationIndex, int count);
+        public void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count);
         public int EnsureCapacity(int capacity);
         public bool Equals(StringBuilder sb);
         public StringBuilder Insert(int index, bool value);
         public StringBuilder Insert(int index, byte value);
         public StringBuilder Insert(int index, char value);
-        public StringBuilder Insert(int index, char\[\] value);
+        public StringBuilder Insert(int index, char[] value);
         public StringBuilder Insert(int index, decimal value);
         public StringBuilder Insert(int index, double value);
         public StringBuilder Insert(int index, float value);
@@ -1626,7 +1630,7 @@ The `StringBuilder` class represents a mutable string.
         public StringBuilder Insert(int index, ulong value);
         public StringBuilder Insert(int index, ushort value);
         public StringBuilder Insert(int index, string value, int count);
-        public StringBuilder Insert(int index, char\[\] value, int startIndex, int charCount);
+        public StringBuilder Insert(int index, char[] value, int startIndex, int charCount);
         public StringBuilder Remove(int startIndex, int length);
         public StringBuilder Replace(char oldChar, char newChar);
         public StringBuilder Replace(string oldValue, string newValue);
@@ -1790,7 +1794,7 @@ For an object to be part of a foreach statement it has to implement the `IEnumer
     { 
         bool IsFixedSize { get; }               // return true if this is a fixed-size object
         bool IsReadOnly { get; }                // return true if this is a read-only object
-        object this\[int index\] { get; set; }    // Gets or sets the element at the specified index.
+        object this[int index] { get; set; }    // Gets or sets the element at the specified index.
         
         int Add(object value);                  // Adds an item to the list
         void Clear();                           // Removes all items
@@ -1824,7 +1828,7 @@ The terms **dictionary**, **map** and **associative array** denote the same thin
         ICollection Keys { get; }
         ICollection Values { get; }
         
-        object this\[object key\] { get; set; }
+        object this[object key] { get; set; }
 
         void Add(object key, object value);
         void Clear();
@@ -2020,7 +2024,7 @@ For a method to be assignable to a `delegate` type variable it should have **the
         MessageBox.Show(i.ToString());
     }
 
-    private void button1\_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
     {
         //CalculationDelegate d = new CalculationDelegate(Add); // it is the same as the following
         CalculationDelegate d = Add;
@@ -2089,8 +2093,8 @@ The methods and properties defined by those classes can be called on a delegate 
         MessageBox.Show(Res.ToString());
     }
 
-    /\* multicast delegates \*/
-    private void button1\_Click(object sender, EventArgs e)
+    /* multicast delegates */
+    private void button1_Click(object sender, EventArgs e)
     {
         CalculationDelegate d = Add; 
    
@@ -2129,7 +2133,7 @@ An Anonymous method is assignable to a delegate value just like any other compat
         MessageBox.Show("Named method: " + S);
     }
 
-    private void button1\_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
     {
         // a named method
         StringDelegate d = Display;
@@ -2163,8 +2167,8 @@ A class imposes a name scope which may include other nested types such as
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Class\_(computer\_science)](http://en.wikipedia.org/wiki/Class_(computer_science))
-*   [http://en.wikipedia.org/wiki/Category:Object-oriented\_programming](http://en.wikipedia.org/wiki/Category:Object-oriented_programming)
+*   [http://en.wikipedia.org/wiki/Class_(computer_science)](http://en.wikipedia.org/wiki/Class_(computer_science))
+*   [http://en.wikipedia.org/wiki/Category:Object-oriented_programming](http://en.wikipedia.org/wiki/Category:Object-oriented_programming)
 
 #### Class definition
 
@@ -2289,8 +2293,8 @@ Object variables can only access members of its declared type, not of the actual
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Inheritance\_(computer\_science)](http://en.wikipedia.org/wiki/Inheritance_(computer_science))
-*   [http://en.wikipedia.org/wiki/Encapsulation\_(computer\_science)](http://en.wikipedia.org/wiki/Encapsulation_(computer_science))
+*   [http://en.wikipedia.org/wiki/Inheritance_(computer_science)](http://en.wikipedia.org/wiki/Inheritance_(computer_science))
+*   [http://en.wikipedia.org/wiki/Encapsulation_(computer_science)](http://en.wikipedia.org/wiki/Encapsulation_(computer_science))
 
 #### Access modifiers and class members
 
@@ -2553,7 +2557,7 @@ Upon calling an overloaded method the system uses the number and type of argumen
 
 A method may declare one or more array parameters.
 
-    public void Exec(string\[\] a)
+    public void Exec(string[] a)
     {
         string Text = "";
         foreach (string s in a)
@@ -2564,7 +2568,7 @@ A method may declare one or more array parameters.
     
     ...
     
-    Exec( new string\[\] {"hi", "there"} );
+    Exec( new string[] {"hi", "there"} );
 
 The keyword `params` may applied to the last parameter, which must be of some `array` type.
 
@@ -2572,7 +2576,7 @@ Only a single parameter may declared as a `params` parameter and must be the las
 
 The keyword `params` makes it possible to pass a variable number of arguments using commas.
 
-    public void Exec2(params string\[\] a)
+    public void Exec2(params string[] a)
     {
         string Text = "";
         foreach (string s in a)
@@ -2712,7 +2716,7 @@ Indexers can have more than one parameters, thus resempling a two-dimensional ar
             get { return list.Count; }
         }
 
-        public double this\[string Name\]
+        public double this[string Name]
         {
             get { return Find(Name).Price; }
             set 
@@ -2727,11 +2731,11 @@ Indexers can have more than one parameters, thus resempling a two-dimensional ar
             }
         }
 
-        public Item this\[int Index\]
+        public Item this[int Index]
         {
             get 
             { 
-                return ((Item)list\[Index\]); 
+                return ((Item)list[Index]); 
             }
 
         }
@@ -2909,7 +2913,7 @@ If the `EventHandler` delegate is not enough to convey the required information 
 
 A listener code links to an event by providing a method compatible to the event delegate signature and using the familiar `+=` operator. A listener code may later unsubscribe from that event. The listener's method that handles the event is called **event handler**.
 
-    public void Man\_NameChanged(object sender, NameEventArgs e)
+    public void Man_NameChanged(object sender, NameEventArgs e)
     {
         MessageBox.Show("Old name: " + e.OldName + ", New name: " + e.NewName);
     }
@@ -2917,7 +2921,7 @@ A listener code links to an event by providing a method compatible to the event 
     ...
     
     Man M = new Man();
-    M.NameChanged += Man\_NameChanged;
+    M.NameChanged += Man_NameChanged;
     
     ...
     
@@ -2958,7 +2962,7 @@ An event is actually a special kind of property which is required to always have
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Event\_(computing)](http://en.wikipedia.org/wiki/Event_(computing))
+*   [http://en.wikipedia.org/wiki/Event_(computing)](http://en.wikipedia.org/wiki/Event_(computing))
 
 #### Static classes and static members
 
@@ -3022,12 +3026,12 @@ Static classes is a convenient way to organize methods in related groups.
 	
         static public double CelsiusToFahrenheit(double Value)
         {
-            return ((Value \* 9) / 5) + 32;
+            return ((Value * 9) / 5) + 32;
         }
 	
         static public double FahrenheitToCelsius(double Value)
         {
-            return ((Value - 32) \* 5) / 9;
+            return ((Value - 32) * 5) / 9;
         }
 	
         static public double CelsiusToKelvin(double Value)
@@ -3190,7 +3194,7 @@ That is a polymorphic call takes place because **there is a variable of a base t
     French french = new French();
     German german = new German();
 	
-    Man\[\] men = new Man\[\] { italian, french, german };
+    Man[] men = new Man[] { italian, french, german };
 	
     foreach (Man m in men)
         m.SayGoodMorning();                 // a polymorphic call
@@ -3216,7 +3220,7 @@ The keyword `sealed` may used with an overriden method or property in order to p
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Polymorphism\_in\_object-oriented\_programming](http://en.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming)
+*   [http://en.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming](http://en.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming)
 
 #### Abstract classes
 
@@ -3335,7 +3339,7 @@ Interfaces actually promote polymorphism.
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Interface\_(computer\_science)](http://en.wikipedia.org/wiki/Interface_(computer_science))
+*   [http://en.wikipedia.org/wiki/Interface_(computer_science)](http://en.wikipedia.org/wiki/Interface_(computer_science))
 
 #### Structs
 
@@ -3688,7 +3692,7 @@ Object intitializers can not be used with a nullable struct.
 
 Object initializers may be used with arrays, anonymous arrays, collections and generic collections. Especially with collections, object initializers is a way to avoid multiple calls to an `Add()` method.
 
-    Man\[\] men = new Man\[\]                       // initializing an array                             
+    Man[] men = new Man[]                       // initializing an array                             
     {
         new Man { Name = "John", Age = 32 },
         new Man { Name = "Jane", Age = 30 },
@@ -3697,7 +3701,7 @@ Object initializers may be used with arrays, anonymous arrays, collections and g
 	   
     ...
 	
-    var men = new\[\]                             // initializing an anonymous array                             
+    var men = new[]                             // initializing an anonymous array                             
     {
         new Man { Name = "John", Age = 32 },
         new Man { Name = "Jane", Age = 30 },
@@ -3757,14 +3761,14 @@ A method defined in the type with the same name and parameter list as an extensi
         {
             static public IList ToList(this string S, char Separator)
             { 
-                string\[\] a = S.Split(new char\[\] { Separator } );
+                string[] a = S.Split(new char[] { Separator } );
                 IList list = new ArrayList(a);
                 return list;
             }
 	
             static public double AsFahrenheit(this Temperature temperature)
             {
-                return ((temperature.Value \* 9) / 5) + 32;
+                return ((temperature.Value * 9) / 5) + 32;
             }
 	
             static public double AsKelvin(this Temperature temperature)
@@ -3814,12 +3818,12 @@ The overloading is done by declaring a static function using the keyword `operat
 	
         static public double CelsiusToFahrenheit(double Value)
         {
-            return ((Value \* 9) / 5) + 32;
+            return ((Value * 9) / 5) + 32;
         }
 	
         static public double FahrenheitToCelsius(double Value)
         {
-            return ((Value - 32) \* 5) / 9;
+            return ((Value - 32) * 5) / 9;
         }
 	
         static public double CelsiusToKelvin(double Value)
@@ -3891,14 +3895,14 @@ Follow the convention: use camel casing with private fields.
 
 Avoid underscores.
 
-    \_member
-    m\_width
-    total\_size
-    Calculate\_Pressure\_Drop()
+    _member
+    m_width
+    total_size
+    Calculate_Pressure_Drop()
 
 Underscores and upper casing (SCREAMING CAPS) sometimes are used with constant or read only fields.
 
-    static public readonly DOWNLOADER\_SEMAPHORE\_NAME = ".....";
+    static public readonly DOWNLOADER_SEMAPHORE_NAME = ".....";
 
 Methods should contain a verb denoting the operation. Use pascal casing.
 
@@ -3998,7 +4002,7 @@ The `KeepAlive(Object obj)` forces GC not to collect the specified object. That 
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Garbage\_collection\_(computer\_science)](http://en.wikipedia.org/wiki/Garbage_collection_(computer_science))
+*   [http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)](http://en.wikipedia.org/wiki/Garbage_collection_(computer_science))
 
 #### IDisposable
 
@@ -4021,10 +4025,10 @@ Here is a sample `IDisposable` implementation, implemented as the documentation 
     {
         private bool disposed = false;    // true if the protected Dispose() is called
 	
-        /\* The disposing parameter is true when this method is called
+        /* The disposing parameter is true when this method is called
            by the public Dispose() method, that is by application code.
            The disposing parameter is false when this method is called 
-           by the destructor, that is by the GC.   \*/
+           by the destructor, that is by the GC.   */
         protected virtual void Dispose(bool disposing)
         {
             if (!this.disposed)
@@ -4178,14 +4182,14 @@ Furthermore a type, that is a class, struct etc, or a method, property or a code
 
     unsafe public class  UnsafeClass
     {
-        static public void Process(int\* x)
+        static public void Process(int* x)
         {
         }
     }
     
     public class SafeClass
     {
-        unsafe static public void Process(int\* x)
+        unsafe static public void Process(int* x)
         {
         }
     }
@@ -4211,19 +4215,19 @@ Here is an unsafe block example.
     {
         int i = 1234;
 	
-        int\* P = null;                  // declare a pointer to an integer
+        int* P = null;                  // declare a pointer to an integer
         P = &i;                         // assign P the address of i, using the address of operator &
 	
-        int x = \*P;                     // get the data value the P points to, using the indication operator \*
+        int x = *P;                     // get the data value the P points to, using the indication operator *
         MessageBox.Show(x.ToString());  // it is the initial value of i
  
-        \*P = 4567;                      // assign the value 4567 as the content of the address P points to            
+        *P = 4567;                      // assign the value 4567 as the content of the address P points to            
         MessageBox.Show(i.ToString());  // suddenly i has a new value
     }
 
 Lets shed some light. Pointers are declared using a base type and the operator `*`.
 
-    int\* P;	
+    int* P;	
 
 The `null` literal value may be assigned to any pointer variable;
 
@@ -4235,14 +4239,14 @@ The **address of** operator `&` returns the address of a Value type variable or 
 
 The **indication operator** `*` is used in accessing the data stored to the address a pointer points to.
 
-    int x = \*P
+    int x = *P
 
-    \*P = 4567;
+    *P = 4567;
 
 A pointer may be assigned another pointer, thus making both reference the same address.
 
-    int\* P1;
-    int\* P2;
+    int* P1;
+    int* P2;
     
     int x = 123;
     P1 = &x;
@@ -4262,7 +4266,7 @@ Memory addresses are numbered using integers. Thus it is possible to represent a
 
     unsafe
     {
-        int\* P = null;                  // P points to the "null address", that is "address zero"
+        int* P = null;                  // P points to the "null address", that is "address zero"
 	
         int x = (int)P;                 // get the address P points to, as an integer
         MessageBox.Show(x.ToString());
@@ -4272,7 +4276,7 @@ Memory addresses are numbered using integers. Thus it is possible to represent a
         x = (int)P;                     // get the address P points to, as an integer
         MessageBox.Show(x.ToString());
 	
-        int\* P2 = (int\*)x;              // convert an integer back to a pointer
+        int* P2 = (int*)x;              // convert an integer back to a pointer
 	
         MessageBox.Show((\*P2).ToString());
     }
@@ -4281,7 +4285,7 @@ It is possible to declare multiple pointers in the same declaration. And again i
 
     unsafe
     {
-        int\* P1, P2;
+        int* P1, P2;
         int x = 123;
 	
         P1 = &x;
@@ -4301,7 +4305,7 @@ The `fixed` keyword may be used to create a fixed size buffer of any Value type 
 
     unsafe public struct Item
     {
-        public fixed char Name\[48\];     // this actually becomes a char\* pointer
+        public fixed char Name[48];     // this actually becomes a char\* pointer
         public double Price;
     } 
 
@@ -4310,7 +4314,7 @@ Fixed size buffers
 *   can be used only in an unsafe context
 *   can be used as instance fields of a struct
 *   can be only single-dimensional arrays
-*   required to define their size (no Name\[\] is allowed)
+*   required to define their size (no Name[] is allowed)
 
 Class instances, that is objects, are subject to garbage collection and after such a collection an object may have changed its location in memory.
 
@@ -4322,10 +4326,10 @@ Objects enclosed by a `fixed` statement remain in the same memory location until
 	
     unsafe
     {
-        fixed (ulong\* pX = &c.x, pY = &c.y)
+        fixed (ulong* pX = &c.x, pY = &c.y)
         {
-            \*pX = 100;
-            \*pY = 200;
+            *pX = 100;
+            *pY = 200;
             
             //pX++;                     // Error:	Cannot assign to 'pX' because it is a 'fixed variable'	
         }
@@ -4349,7 +4353,7 @@ The CLR performs **buffer overrun detection** against `stackalloc` variables. Wh
     {
         const int BufSize = 92;
 	
-        char\* Buf = stackalloc char\[BufSize\];
+        char* Buf = stackalloc char[BufSize];
 	 
         ...
     }
@@ -4359,7 +4363,7 @@ The CLR performs **buffer overrun detection** against `stackalloc` variables. Wh
 The pointer member operator `->` is used in accessing a member of a struct through a pointer variable.
 
     Item item = new Item();
-    Item\* pItem = &item;
+    Item* pItem = &item;
     pItem->Price = 2.5;
 
 #### Pointer arithmetic
@@ -4368,7 +4372,7 @@ The increment and decrement operators, `++` and `--`, may be used with pointer e
 
 The size of a pointer type is 32 bits in 32bit systems.
 
-    Item\* pItems = stackalloc Item\[2\];
+    Item* pItems = stackalloc Item[2];
     pItems++;                                           // make pItems to point to the second element
     pItems--;                                           // decrease pItems by an element
 
@@ -4383,19 +4387,19 @@ Memory location content may accessed by indexing a pointer variable just like an
 
     unsafe
     {
-        int\* P = stackalloc int\[2\];
-        P\[0\] = 1234;                        // assign an int value as the content to the location P\[0\] points to
-        P\[1\] = 5678;                        // assign an int value as the content to the location P\[1\] points to
+        int* P = stackalloc int[2];
+        P[0] = 1234;                        // assign an int value as the content to the location P[0] points to
+        P[1] = 5678;                        // assign an int value as the content to the location P[1] points to
 	
-        int\* P2 = P;
-        int x = (int)P2;                    // get the address of P\[0\]
+        int* P2 = P;
+        int x = (int)P2;                    // get the address of P[0]
         MessageBox.Show(x.ToString());      // display the address
-        MessageBox.Show(P2\[0\].ToString());  // display the content
+        MessageBox.Show(P2[0].ToString());  // display the content
 	
         P2++;                               // increment the pointer
-        x = (int)P2;                        // get the address of P\[1\]
+        x = (int)P2;                        // get the address of P[1]
         MessageBox.Show(x.ToString());      // display the address
-        MessageBox.Show(P2\[0\].ToString());  // display the content
+        MessageBox.Show(P2[0].ToString());  // display the content
     }
 
 #### Pointer comparisons
@@ -4420,7 +4424,7 @@ Stack pointer is a pointer which points to the end of the last stack frame. Stac
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Call\_stack](http://en.wikipedia.org/wiki/Call_stack)
+*   [http://en.wikipedia.org/wiki/Call_stack](http://en.wikipedia.org/wiki/Call_stack)
 
 #### Recursive methods
 
@@ -4438,7 +4442,7 @@ A recursive method is a method which recursively calls itself. Recursive methods
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Recursion\_(computer\_science)](http://en.wikipedia.org/wiki/Recursion_(computer_science))
+*   [http://en.wikipedia.org/wiki/Recursion_(computer_science)](http://en.wikipedia.org/wiki/Recursion_(computer_science))
 
 #### IDE menus and tools related to classes
 
@@ -4479,20 +4483,20 @@ An attribute is placed immediately before the code element and is surrounded by 
 
 Here is an example with all possible combinations.
 
-    //\[FlagsAttribute()\]
-    //\[FlagsAttribute\]
-    //\[Flags()\]
-    \[Flags\]
+    //[FlagsAttribute()]
+    //[FlagsAttribute]
+    //[Flags()]
+    [Flags]
     enum Day { Sun = 0, Mon = 1, Tue = 2, Wed = 4, Thu = 8, Fri = 16, Sat = 32 };
 
 Here is an example using the `BrowsableAttribute` class which accepts parameters. The `BrowsableAttribute` specifies whether a property or event should be displayed in the **Properties window** of the MS Visual Studio.
 
     public class UselessComponent : Component
     {
-        \[Browsable(false)\]
+        [Browsable(false)]
         public int UselessProperty { get; set; }
 	
-        \[Browsable(true)\]
+        [Browsable(true)]
         public string Name { get; set; }
     }
 
@@ -4524,7 +4528,7 @@ An `Attribute` class maybe marked with the `System.AttributeUsageAttribute` attr
 
 For example the `CLSCompliantAttribute` is declared as following
 
-    \[AttributeUsageAttribute(AttributeTargets.All, Inherited = true, AllowMultiple = false)\]
+    [AttributeUsageAttribute(AttributeTargets.All, Inherited = true, AllowMultiple = false)]
     public sealed class CLSCompliantAttribute : Attribute
     {
     ...
@@ -4533,7 +4537,7 @@ For example the `CLSCompliantAttribute` is declared as following
 The Inherited named parameter determines whether the attribute extends its scope to derived classes and overriding members. The AllowMultiple named parameter determines whether the attribute can be declared more than once on a given program element. There are two types of parameters in an attibute: Positional and named. Positional parameters are required and must come before any named parameters while named parameters are optional. Positional parameters are actually parameters of one of the many constructors the individual Attribute class may have while named parameters are read/write properties of that same Attribute class. When an attribute defines multiple targets, it is possible to differentiate its application scope by using an attribute target and a colon.
 
 	
-    \[assembly: CLSCompliant(true)\]
+    [assembly: CLSCompliant(true)]
 	
 	
 	
@@ -4542,7 +4546,7 @@ The Inherited named parameter determines whether the attribute extends its scope
 
 A custom attribute is an `Attribute` class descendant which is marked by the `AttributeUsageAttribute`. Being a class it may provide methods and properties as any other class.
 
-    \[AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)\]
+    [AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)]
     public class CodeHistoryAttribute : Attribute
     {
         private string developer;
@@ -4560,7 +4564,7 @@ A custom attribute is an `Attribute` class descendant which is marked by the `At
     }
 	
 	
-    \[CodeHistory("teo", "1.0", Comments = "this is the initial version")\]
+    [CodeHistory("teo", "1.0", Comments = "this is the initial version")]
     public class Demo
     {
         public void Exec()
@@ -4603,15 +4607,15 @@ Microsoft .Net is Microsoft's implementation of .Net. There are at least two oth
 see also:
 
 *   [http://www.ecma-international.org/](http://www.ecma-international.org/)
-*   [http://en.wikipedia.org/wiki/Common\_Language\_Runtime](http://en.wikipedia.org/wiki/Common_Language_Runtime)
-*   [http://en.wikipedia.org/wiki/Base\_Class\_Library](http://en.wikipedia.org/wiki/Base_Class_Library)
-*   [http://en.wikipedia.org/wiki/Framework\_Class\_Library](http://en.wikipedia.org/wiki/Framework_Class_Library)
+*   [http://en.wikipedia.org/wiki/Common_Language_Runtime](http://en.wikipedia.org/wiki/Common_Language_Runtime)
+*   [http://en.wikipedia.org/wiki/Base_Class_Library](http://en.wikipedia.org/wiki/Base_Class_Library)
+*   [http://en.wikipedia.org/wiki/Framework_Class_Library](http://en.wikipedia.org/wiki/Framework_Class_Library)
 
 #### Common Intermediate Language (CIL)
 
 Compilers that target CLR compile to Common Intermediate Language (CIL), formerly called Microsoft Intermediate Language (MSIL). CIL is an object-oriented assembly language and it is actually a CPU and platform independent assembly-like instruction set and can be executed in any environment the CLR supports. see also:
 
-*   [http://en.wikipedia.org/wiki/Common\_Intermediate\_Language](http://en.wikipedia.org/wiki/Common_Intermediate_Language)
+*   [http://en.wikipedia.org/wiki/Common_Intermediate_Language](http://en.wikipedia.org/wiki/Common_Intermediate_Language)
 
 #### Common Language Infrastructure (CLI)
 
@@ -4632,7 +4636,7 @@ VES loads and executes CLR applications. VES is the actual executor of the CIL b
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Common\_Language\_Infrastructure](http://en.wikipedia.org/wiki/Common_Language_Infrastructure)
+*   [http://en.wikipedia.org/wiki/Common_Language_Infrastructure](http://en.wikipedia.org/wiki/Common_Language_Infrastructure)
 
 #### Managed and unmanaged code
 
@@ -4644,7 +4648,7 @@ Manage code is type safe code according to rules befined by the CTS. Manage code
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Managed\_code](http://en.wikipedia.org/wiki/Managed_code)
+*   [http://en.wikipedia.org/wiki/Managed_code](http://en.wikipedia.org/wiki/Managed_code)
 
 #### Application and Process
 
@@ -4656,7 +4660,7 @@ In a multi-tasking environment it is required to isolate running applications, o
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Process\_(computing)](http://en.wikipedia.org/wiki/Process_(computing))
+*   [http://en.wikipedia.org/wiki/Process_(computing)](http://en.wikipedia.org/wiki/Process_(computing))
 *   System.Diagnostics.Process class
 
 #### Application domains
@@ -4667,7 +4671,7 @@ In the CLR, managed code must successfully pass a verification test before it is
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Application\_Domain](http://en.wikipedia.org/wiki/Application_Domain)
+*   [http://en.wikipedia.org/wiki/Application_Domain](http://en.wikipedia.org/wiki/Application_Domain)
 *   `System.AppDomain` class
 
 #### Assemblies
@@ -4704,7 +4708,7 @@ It is not possible to unload an assembly. Only a complete application domain can
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/.NET\_assembly](http://en.wikipedia.org/wiki/.NET_assembly)
+*   [http://en.wikipedia.org/wiki/.NET_assembly](http://en.wikipedia.org/wiki/.NET_assembly)
 *   `System.Reflection.Assembly` class
 
 #### GAC, shared and private assemblies
@@ -4780,7 +4784,7 @@ The `AppDomain` and `Assembly` class also provide reflection capabilities.
 Getting the currently executing assembly and an array of the types it contains
 
     Assembly A = Assembly.GetExecutingAssembly();           // another way to get the current assembly
-    Type\[\] types = A.GetExportedTypes();                    // gets an array of all public types
+    Type[] types = A.GetExportedTypes();                    // gets an array of all public types
 
 Supposing there is a `Lessons.dll` assembly with the following code
 
@@ -4816,13 +4820,13 @@ Loading an assemply dynamically
 Accessing types and member info from an assembly
 
     Type t = LessonsAssembly.GetType("Lessons.Item");       // get a type from the dynamically loaded assembly
-    PropertyInfo\[\] props = t.GetProperties();               // get the properties of a type
-    MethodInfo\[\] methods = t.GetMethods();                  // get the methods of a type
+    PropertyInfo[] props = t.GetProperties();               // get the properties of a type
+    MethodInfo[] methods = t.GetMethods();                  // get the methods of a type
 
 Invoking a constructor
 
-    ConstructorInfo ci = t.GetConstructor(new Type\[\] {typeof(string), typeof(double) });    // get a constructor of a type
-    object o = ci.Invoke(new object\[\] {"Hard disk", 5 });                                   // invoke the constructor
+    ConstructorInfo ci = t.GetConstructor(new Type[] {typeof(string), typeof(double) });    // get a constructor of a type
+    object o = ci.Invoke(new object[] {"Hard disk", 5 });                                   // invoke the constructor
 
 Getting and setting property values and invoking a method
 
@@ -4831,7 +4835,7 @@ Getting and setting property values and invoking a method
     MessageBox.Show(pi.GetValue(o, null).ToString());       // display its value
 	
     MethodInfo mi = t.GetMethod("IncreasePriceBy");         // get a method
-    mi.Invoke(o, new object\[\] { 10 });                      // invoke the method, the method affects the Price property
+    mi.Invoke(o, new object[] { 10 });                      // invoke the method, the method affects the Price property
 
 ### Lambda Expressions
 
@@ -4848,7 +4852,7 @@ Lambda expressions are also used in creating **Expression Trees**. Here is an ol
         MessageBox.Show("Named method: " + S);
     }
 	
-    private void button1\_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
     {
         // a named method
         StringDelegate d = Display;
@@ -4915,7 +4919,7 @@ A lambda expression may contain a `return` statement. That `return` statement d
 
     public delegate int MathDelegate(int a, int b, int c);
 	
-    private void button2\_Click(object sender, EventArgs e)
+    private void button2_Click(object sender, EventArgs e)
     {
         // multiple parameters
         MathDelegate d = (x, y, z) => { return x + y + z; };
@@ -4927,7 +4931,7 @@ A lambda expression may contain a `return` statement. That `return` statement d
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Lambda\_expressions](http://en.wikipedia.org/wiki/Lambda_expressions)
+*   [http://en.wikipedia.org/wiki/Lambda_expressions](http://en.wikipedia.org/wiki/Lambda_expressions)
 
 #### Variable scope in lambda expressions
 
@@ -4937,13 +4941,13 @@ A lambda expression defined as a member field in a class can use only static fie
 
 Variables captured that way by a lambda expression are stored with the lambda expression and they are not garbage collected as usually.
 
-    /\* a lambda expression defined outside of any method, it is actually a field
-       such a lambda expression can use only static fields \*/
+    /* a lambda expression defined outside of any method, it is actually a field
+       such a lambda expression can use only static fields */
     int a = 1;
     static int b = 2;
     MathDelegate d = (x, y, z) => { return x + y + z + b; };
 	
-    private void button3\_Click(object sender, EventArgs e)
+    private void button3_Click(object sender, EventArgs e)
     {
         int c = 3;
 	
@@ -4972,7 +4976,7 @@ When a generic type is instantiated, those type placeholders are assigned concre
         void RemoveAt(int Index);
 
         int Count { get;}
-        T this\[int Index\] { get; }    
+        T this[int Index] { get; }    
     }
 
 In a generic type, such as the above, type parameters are used when defining members of the type, such as fields, properties and methods and inside code. Inside that type, those type parameters may be used in typecasting too.
@@ -5003,7 +5007,7 @@ Here is a generic class which implements the above generic interface.
 
         public void RemoveAt(int Index)
         {
-            Remove((T)list\[Index\]);         // type-casting using a type parameter
+            Remove((T)list[Index]);         // type-casting using a type parameter
         }
 
         public int Count
@@ -5011,9 +5015,9 @@ Here is a generic class which implements the above generic interface.
             get { return list.Count; }
         }
 
-        public T this\[int Index\]            // generic property
+        public T this[int Index]            // generic property
         {
-            get { return (T)list\[Index\]; }  // type-casting using a type parameter
+            get { return (T)list[Index]; }  // type-casting using a type parameter
         }
     
     }
@@ -5028,7 +5032,7 @@ And here is how to use the above generic class, using string as the type argumen
     string S = "";
 
     for (int i = 0; i < list.Count; i++)
-        S += list\[i\] + " ";
+        S += list[i] + " ";
 
     MessageBox.Show(S);
 	
@@ -5044,13 +5048,13 @@ And here is that same generic class using integer as the type argument.
     int total = 0;
 
     for (int i = 0; i < list.Count; i++)
-        total += list\[i\];
+        total += list[i];
 
     MessageBox.Show(total.ToString());
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Generic\_programming](http://en.wikipedia.org/wiki/Generic_programming)
+*   [http://en.wikipedia.org/wiki/Generic_programming](http://en.wikipedia.org/wiki/Generic_programming)
 *   [http://msdn.microsoft.com/en-us/library/aa479859.aspx](http://msdn.microsoft.com/en-us/library/aa479859.aspx)
 *   [http://msdn.microsoft.com/en-us/library/aa479866.aspx](http://msdn.microsoft.com/en-us/library/aa479866.aspx)
 
@@ -5159,7 +5163,7 @@ A Generic value can not be assigned to a Generic even though a Derived value is 
 
 see also:
 
-*   [http://en.wikipedia.org/wiki/Covariance\_and\_contravariance\_(computer\_science)](http://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science))
+*   [http://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)](http://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science))
 
 #### The generic List<T> class
 
@@ -5178,7 +5182,7 @@ The `List<T>` provides an **indexer property** so elements of that list can be a
     int total = 0;
 
     for (int i = 0; i < list.Count; i++)
-        total += list\[i\];
+        total += list[i];
 
     MessageBox.Show(total.ToString());
 
@@ -5188,7 +5192,7 @@ The `System.Collections.ArrayList` class is still available though.
 
 A single dimensional array with a lower bound of zero it automatically implements the `IList<T>` generic interface.
 
-    int\[\] a = { 0, 1, 2 };
+    int[] a = { 0, 1, 2 };
     IList<int> list = a;
 
 The resulting list is of a fixed size. Elements can not be added or removed.
@@ -5306,12 +5310,12 @@ Here is an example of a constraint applied to a generic `Sorter` class.
 
     public class Sorter<T> where T : IComparable
     {
-        public T\[\] Sort(GenericList<T> SourceList)
+        public T[] Sort(GenericList<T> SourceList)
         {
-            T\[\] elements = new T\[SourceList.Count\];
+            T[] elements = new T[SourceList.Count];
 
             for (int i = 0; i < elements.Length; i++)
-                elements\[i\] = SourceList\[i\];
+                elements[i] = SourceList[i];
 
             Array.Sort(elements);
 
@@ -5329,7 +5333,7 @@ Here is an example of a constraint applied to a generic `Sorter` class.
 
     Sorter<int> sorter = new Sorter<int>();
 
-    int\[\] elements = sorter.Sort(list);
+    int[] elements = sorter.Sort(list);
 
     string S = "";
 
@@ -5432,15 +5436,15 @@ The `Array` and the `List<T>` classes provide a great number of generic methods.
     public abstract class Array : ICloneable, IList, ICollection, IEnumerable
     {
        // some of the generic members 
-       public static bool Exists<T>(T\[\] array, Predicate<T> match);
-       public static T Find<T>(T\[\] array, Predicate<T> match);
-       public static T\[\] FindAll<T>(T\[\] array, Predicate<T> match);
-       public static int FindIndex<T>(T\[\] array, Predicate<T> match);
-       public static T FindLast<T>(T\[\] array, Predicate<T> match);
-       public static void ForEach<T>(T\[\] array, Action<T> action);
-       public static int  IndexOf<T>(T\[\] array, T value);       
-       public static int LastIndexOf<T>(T\[\] array, T value);   
-       public static void Sort<T>(T\[\] array, Comparison<T> comparison); 
+       public static bool Exists<T>(T[] array, Predicate<T> match);
+       public static T Find<T>(T[] array, Predicate<T> match);
+       public static T[] FindAll<T>(T[] array, Predicate<T> match);
+       public static int FindIndex<T>(T[] array, Predicate<T> match);
+       public static T FindLast<T>(T[] array, Predicate<T> match);
+       public static void ForEach<T>(T[] array, Action<T> action);
+       public static int  IndexOf<T>(T[] array, T value);       
+       public static int LastIndexOf<T>(T[] array, T value);   
+       public static void Sort<T>(T[] array, Comparison<T> comparison); 
        
        // ... other members here
     }
@@ -5458,7 +5462,7 @@ The `Array` and the `List<T>` classes provide a great number of generic methods.
        public int IndexOf(T item);
        public int LastIndexOf(T item);
        public void Sort(Comparison<T> comparison);
-       public T\[\] ToArray();
+       public T[] ToArray();
 
        // ... other members here
     }
@@ -5469,8 +5473,8 @@ Here is an example using the `List<T>` class and the `delegate void Action<T>(T 
 
     int globalTotal = 0;
 
-    /\* to be used with delegates of type
-       delegate void Action<T>(T obj)  \*/
+    /* to be used with delegates of type
+       delegate void Action<T>(T obj)  */
     void TotalHandler(int obj)
     {
         globalTotal += obj;
@@ -5532,10 +5536,10 @@ Here is an example of use of one of those helper generic interfaces, the `ICompa
     class StringComparer : IComparer<string>
     {
 
-        /\* Comparison methods return table             
+        /* Comparison methods return table             
                 A < B      -1
                 A == B      0
-                A > B       1                \*/
+                A > B       1                */
         public int Compare(string A, string B)
         {
             if ((A == null) && (B == null))
@@ -5564,7 +5568,7 @@ Here is an example of use of one of those helper generic interfaces, the `ICompa
 
     ...
 
-    string\[\] cities = { "Rome", "Berlin", "Athens", "Madrid", "London", "Paris", "Oslo"};
+    string[] cities = { "Rome", "Berlin", "Athens", "Madrid", "London", "Paris", "Oslo"};
 
     Display(cities);    // a zero bounded array is an IList
 
@@ -5609,7 +5613,7 @@ A `foreach` statement continues execution as long as its iterator has a next val
 
 Arrays are iterators by default, as most of the list classes and so they can be used with foreach statements.
 
-    int\[\] numbers = int\[\] {1, 2, 3, 4, 5};
+    int[] numbers = int[] {1, 2, 3, 4, 5};
     
     foreach (int n in numbers)
     {
@@ -5655,14 +5659,14 @@ The presence of the `GetEnumerator()` method in conjunction with the `yield` key
 
     public class NumberList //: IEnumerable
     {
-        int\[\] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	
 	
         public IEnumerator GetEnumerator()
         {
             for (int i = 0; i < numbers.Length; i++)
             {
-                yield return numbers\[i\];
+                yield return numbers[i];
             }
         }
     }
@@ -5725,7 +5729,7 @@ Here is an example which uses an `IEnumerator` and a generic `IEnumerator<T>`
         {
             for (int i = 0; i < persons.Count; i++)
             {
-                yield return persons\[i\];
+                yield return persons[i];
             }
         }
     }
@@ -5739,7 +5743,7 @@ Here is an example which uses an `IEnumerator` and a generic `IEnumerator<T>`
         {
             for (int i = 0; i < persons.Count; i++)
             {
-                yield return (Person)persons\[i\];
+                yield return (Person)persons[i];
             }
         }
     }
@@ -5770,15 +5774,15 @@ A class may implement multiple iterator methods which may or may not accept para
 
     public class MultiList 
     {
-        string\[\] words = {"C#", "is", "a", "great", "language"  };
-        int\[\] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        string[] words = {"C#", "is", "a", "great", "language"  };
+        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         ArrayList persons = new ArrayList { new Person("John Doe"), new Person("Jane Doe") };
 	
         public IEnumerable GetWords()
         {
             for (int i = 0; i < words.Length; i++)
             {
-                yield return words\[i\];
+                yield return words[i];
             }
         }
 	
@@ -5786,7 +5790,7 @@ A class may implement multiple iterator methods which may or may not accept para
         {
             for (int i = StartIndex; i <= EndIndex; i++)
             {
-                yield return numbers\[i\];
+                yield return numbers[i];
             }
         }
 	
@@ -5794,7 +5798,7 @@ A class may implement multiple iterator methods which may or may not accept para
         {
             for (int i = 0; i < persons.Count; i++)
             {
-                yield return persons\[i\];
+                yield return persons[i];
             }
         }
     }
